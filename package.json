@@ -15,8 +15,8 @@
     "react-scripts": "5.0.1",
     "typescript": "^4.8.4",
     "web-vitals": "^2.1.4",
-    "@blocksuite/blocks": "0.2.18",
-    "@blocksuite/editor": "0.2.18"
+    "@blocksuite/blocks": "latest",
+    "@blocksuite/editor": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
