@@ -1,11 +1,8 @@
+import { forwardRef, Suspense, useEffect, useRef } from "react";
 import "@blocksuite/blocks";
-import "@blocksuite/editor";
 import "@blocksuite/blocks/style";
-import "./index.css";
-
 import type { EditorContainer } from "@blocksuite/editor";
 import { createEditor } from "@blocksuite/editor";
-import { forwardRef, Suspense, useEffect, useRef } from "react";
 
 // eslint-disable-next-line react/display-name
 const BlockSuiteEditor = forwardRef<EditorContainer>(({}, ref) => {
@@ -27,10 +24,9 @@ const BlockSuiteEditor = forwardRef<EditorContainer>(({}, ref) => {
       editor.remove();
     };
   }, [ref]);
-  return <div id="editor" style={{ height: "100%" }} ref={containerElement} />;
+  return <div style={{ height: "100%" }} ref={containerElement} />;
 });
 function BlockSuite() {
-  //@ts-ignore
   return (
     <Suspense>
       <BlockSuiteEditor />
