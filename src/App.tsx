@@ -6,7 +6,9 @@ import { BlockSuite } from "./BlockSuite";
 function App() {
   return (
     <div className="App">
-      <BlockSuite />
+      <div className="blocksuite">
+        <BlockSuite />
+      </div>
     </div>
   );
 }

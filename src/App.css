@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+:root {
+  --blocksuite-width: 794px;
+}
+body {
+  background-color: white;
+  color: black;
+  font-weight: normal;
+  font-size: 13px;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+.blocksuite {
+  width: var(--blocksuite-width);
+  padding: 0;
+  box-shadow: 0 1px 3px 1px rgb(60 64 67 / 15%);
+  margin: 0 auto;
+  margin-top: 30px;
+  padding-bottom: 700px;
+}
+.affine-default-page-block-title-container {
+  margin-top: 20px;
+}
+.debug-menu {
+  width: var(--blocksuite-width);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: initial;
+  position: fixed;
+  top: 20px;
+  left: initial;
+}
